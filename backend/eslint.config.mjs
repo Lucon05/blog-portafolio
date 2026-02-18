@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 export default defineConfig(
   {
     // Globally ignored files
-    ignores: ["**/*.config.js"],
+    ignores: ["**/*.config.js", "./dist/**"],
   },
   {
     files: ["**/*.js", "**/*.ts"],
@@ -44,6 +44,6 @@ export default defineConfig(
   },
   {
     linterOptions: { reportUnusedDisableDirectives: true },
-    languageOptions: { parserOptions: { project: true } },
+    languageOptions: { parserOptions: { projectService: true } },
   },
 );

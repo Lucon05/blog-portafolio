@@ -8,7 +8,7 @@ import tseslint from "typescript-eslint";
 export default defineConfig(
   {
     // Globally ignored files
-    ignores: ["**/*.config.js", ".react-router/*/**"],
+    ignores: ["**/*.config.js", ".react-router/*/**", "./build/**"],
   },
   {
     files: ["**/*.js", "**/*.ts", "**/*.tsx"],
@@ -46,7 +46,7 @@ export default defineConfig(
   },
   {
     linterOptions: { reportUnusedDisableDirectives: true },
-    languageOptions: { parserOptions: { project: true } },
+    languageOptions: { parserOptions: { projectService: true } },
   },
   {
     files: ["**/*.ts", "**/*.tsx"],
