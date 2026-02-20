@@ -1,7 +1,9 @@
-import 'dotenv/config';
+import "dotenv/config";
+
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
+
 import indexRouter from "./routes/index";
 
 const app = express();

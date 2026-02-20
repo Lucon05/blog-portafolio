@@ -1,9 +1,9 @@
 import { Router } from "express";
 
+import routerPosts from "./posts";
+
 const router = Router();
 
-router.get("/", (_req, res) => {
-  res.send("Hello world!").end();
-});
+router.use(routerPosts);
 
 export default router;
