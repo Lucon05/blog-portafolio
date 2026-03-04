@@ -10,6 +10,9 @@ importers:
       "@libsql/client":
         specifier: ^0.17.0
         version: 0.17.0
+      cookie-parser:
+        specifier: ^1.4.7
+        version: 1.4.7
       dotenv:
         specifier: ^17.3.1
         version: 17.3.1
@@ -25,6 +28,12 @@ importers:
       morgan:
         specifier: ^1.10.1
         version: 1.10.1
+      pnpm:
+        specifier: ^10.30.3
+        version: 10.30.3
+      zod:
+        specifier: ^4.0.0
+        version: 4.3.6
     devDependencies:
       "@eslint/js":
         specifier: ^9.39.2
@@ -35,8 +44,11 @@ importers:
       "@total-typescript/ts-reset":
         specifier: ^0.6.1
         version: 0.6.1
+      "@types/cookie-parser":
+        specifier: ^1.4.10
+        version: 1.4.10(@types/express@5.0.6)
       "@types/express":
-        specifier: ^5.0.6
+        specifier: ^5.0.3
         version: 5.0.6
       "@types/morgan":
         specifier: ^1.9.10
@@ -1298,6 +1310,14 @@ packages:
         integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==,
       }
 
+  "@types/cookie-parser@1.4.10":
+    resolution:
+      {
+        integrity: sha512-B4xqkqfZ8Wek+rCOeRxsjMS9OgvzebEzzLYw7NHYuvzb7IdxOkI0ZHGgeEBX4PUM7QGVvNSK60T3OvWj3YfBRg==,
+      }
+    peerDependencies:
+      "@types/express": "*"
+
   "@types/estree@1.0.8":
     resolution:
       {
@@ -1724,6 +1744,19 @@ packages:
         integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==,
       }
     engines: { node: ">= 0.6" }
+
+  cookie-parser@1.4.7:
+    resolution:
+      {
+        integrity: sha512-nGUvgXnotP3BsjiLX2ypbQnWoGUPIIfHQNZkkC668ntrzGWEZVW70HDEB1qnNGMicPje6EttlIgzo51YSwNQGw==,
+      }
+    engines: { node: ">= 0.8.0" }
+
+  cookie-signature@1.0.6:
+    resolution:
+      {
+        integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==,
+      }
 
   cookie-signature@1.2.2:
     resolution:
@@ -3121,6 +3154,14 @@ packages:
         integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==,
       }
 
+  pnpm@10.30.3:
+    resolution:
+      {
+        integrity: sha512-yWHR4KLY41TsqlFmuCJRZmi39Ey1vZUSLVkN2Bki9gb1RzttI+xKW+Bef80Y6EiNR9l4u+mBhy8RRdBumnQAFw==,
+      }
+    engines: { node: ">=18.12" }
+    hasBin: true
+
   possible-typed-array-names@1.1.0:
     resolution:
       {
@@ -3777,6 +3818,12 @@ packages:
       }
     engines: { node: ">=10" }
 
+  zod@4.3.6:
+    resolution:
+      {
+        integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==,
+      }
+
 snapshots:
   "@babel/code-frame@7.29.0":
     dependencies:
@@ -4293,6 +4340,10 @@ snapshots:
     dependencies:
       "@types/node": 22.19.11
 
+  "@types/cookie-parser@1.4.10(@types/express@5.0.6)":
+    dependencies:
+      "@types/express": 5.0.6
+
   "@types/estree@1.0.8": {}
 
   "@types/express-serve-static-core@5.1.1":
@@ -4597,6 +4648,13 @@ snapshots:
   content-disposition@1.0.1: {}
 
   content-type@1.0.5: {}
+
+  cookie-parser@1.4.7:
+    dependencies:
+      cookie: 0.7.2
+      cookie-signature: 1.0.6
+
+  cookie-signature@1.0.6: {}
 
   cookie-signature@1.2.2: {}
 
@@ -5532,6 +5590,8 @@ snapshots:
       mlly: 1.8.0
       pathe: 2.0.3
 
+  pnpm@10.30.3: {}
+
   possible-typed-array-names@1.1.0: {}
 
   postcss-load-config@6.0.1(tsx@4.21.0):
@@ -6014,3 +6074,5 @@ snapshots:
   ws@8.19.0: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@4.3.6: {}
