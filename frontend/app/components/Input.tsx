@@ -1,0 +1,39 @@
+import type { ReactNode } from "react";
+import React from "react";
+
+import { cn } from "~/lib/cn";
+
+type InputProps = {
+  className?: string;
+  error?: string;
+  label?: string;
+  disabled?: boolean;
+} & React.InputHTMLAttributes<HTMLInputElement>;
+
+function Input({
+  children,
+  className,
+  label,
+  error,
+  ...inputProps
+}: InputProps) {
+  return (
+    <label>
+      {" "}
+      {label}
+      <input
+        className={cn(
+          {},
+          "rounded-md border p-2",
+          error ? "border-red-500" : "border-gray-300",
+          className,
+        )}
+        {...inputProps}
+      ></input>
+      <br />
+      <span className="text-red-500">{error}</span>
+    </label>
+  );
+}
+
+export default Input;
