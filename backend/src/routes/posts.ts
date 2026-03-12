@@ -7,6 +7,8 @@ import { postsTable } from "../db/schema";
 import { slugify } from "../lib/slugify";
 import { requireAuth } from "../middleware/auth";
 import { createPostSchema, updatePostSchema } from "../schemas/post";
+import { requireOrThrowNotFound } from "../lib/requireOrThrowNotFound";
+import assert from "assert";
 
 async function getPost(slug: string) {
   const [post] = await db
@@ -32,31 +34,25 @@ routerPosts.get("/posts/:slug", async (req, res) => {
 
   const post = await getPost(slug);
 
-  if (!post) {
-    res.status(404).end();
-    return;
-  }
+  requireOrThrowNotFound(post, "el post")
 
   res.json(post);
 });
 
-routerPosts.post("/posts", requireAuth, async (req, res) => {
+routerPosts.post("/posts", async (req, res) => {
   // validacion
-  const input = createPostSchema.safeParse(req.body);
-  if (!input.success) {
-    return res.status(400).json({ errors: input.error.issues });
-  }
+  const input = createPostSchema.parse(req.body);
 
   // creacion del slug
-  const slug = slugify(input.data.title);
+  const slug = slugify(input.title);
 
   const insertResult = await db
     .insert(postsTable)
     .values({
-      body: input.data.body,
-      title: input.data.title,
+      body: input.body,
+      title: input.title,
       slug,
-      published: input.data.published,
+      published: input.published,
     })
     .returning();
 
@@ -67,21 +63,17 @@ routerPosts.put("/posts/:slug", requireAuth, async (req, res) => {
   const slug = z.string().parse(req.params.slug);
 
   // validacion
-  const input = updatePostSchema.safeParse(req.body);
-  if (!input.success) {
-    return res.status(400).json({ errors: input.error.issues });
-  }
+  const input = updatePostSchema.parse(req.body);
+
   const post = await getPost(slug);
-  if (!post) {
-    res.status(404).end();
-    return;
-  }
+ 
+  requireOrThrowNotFound(post, "el post")
 
   const updateResult = await db
     .update(postsTable)
     .set({
-      ...input.data,
-      slug: input.data.title ? slugify(input.data.title) : undefined,
+      ...input,
+      slug: input.title ? slugify(input.title) : undefined,
     })
     .where(eq(postsTable.slug, slug))
     .returning();
@@ -94,10 +86,7 @@ routerPosts.delete("/posts/:slug", requireAuth, async (req, res) => {
 
   const post = await getPost(slug);
 
-  if (!post) {
-    res.status(404).end();
-    return;
-  }
+  requireOrThrowNotFound(post, "el post")
 
   await db.delete(postsTable).where(eq(postsTable.slug, slug));
 
