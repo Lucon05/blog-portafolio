@@ -13,5 +13,8 @@
   "typescript.preferences.autoImportFileExcludePatterns": [
     "zod/dist/types/index.d.ts" // Force auto-imports to v4
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
