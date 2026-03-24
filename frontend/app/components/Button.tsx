@@ -21,11 +21,12 @@ function Button({
     <button
       className={cn(
         {
-          "bg-red": variant === "danger",
-          "bg-blue": variant === "primary",
-          "bg-green": variant === "secondary",
+          "bg-red-500": variant === "danger",
+          "bg-blue-500": variant === "primary",
+          "bg-green-500": variant === "secondary",
           "cursor-not-allowed opacity-50": disabled,
         },
+        'px-2 py-1 rounded-sm bg-blue-500 text-white cursor-pointer',
         className,
       )}
       {...buttonProps}

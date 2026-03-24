@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import React from "react";
 
 import { cn } from "~/lib/cn";
@@ -10,13 +9,7 @@ type InputProps = {
   disabled?: boolean;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-function Input({
-  children,
-  className,
-  label,
-  error,
-  ...inputProps
-}: InputProps) {
+function Input({ className, label, error, ...inputProps }: InputProps) {
   return (
     <label>
       {" "}

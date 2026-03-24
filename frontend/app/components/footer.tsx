@@ -1,9 +1,7 @@
-import React from "react";
-import { cn } from "~/lib/cn";
 
 function Footer() {
   return (
-    <div className="    w-1/1 flex flex-col items-center bg-[#722F37] text-[#f5f5dc]">
+    <div className="sticky flex w-1/1 flex-col items-center bg-[#722F37] text-[#f5f5dc]">
       <div>
         <p className="mt-5 text-2xl">
           <b>Contact</b>
