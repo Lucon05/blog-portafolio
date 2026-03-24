@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import type { Post } from "./fetchPost";
+import type { Post } from "./post";
 import { Card } from "~/components/card";
 
-import { fetchPosts } from "./fetchPost";
+import { fetchPosts } from "./post";
 
 export default function Blog() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -34,11 +34,14 @@ export default function Blog() {
   return (
     <>
       <div className="flex flex-col gap-4 p-4">
-        {posts.map(({ slug, title, body }) => (
+        {posts.map(({ slug, title, body, published }) => (
           <a href={"./blog/" + slug}>
-            <Card>
-              <h1 className="text-2xl font-bold">{title}</h1>
-              <p className="line-clamp-3">{body}</p>
+            <Card className="overflow-clip flex flex-row pb-0 pr-0 items-end">
+              <div className="pb-4 pr-4 grow min-w-0 overflow-hidden">
+                <h1 className="text-2xl font-bold ">{title}</h1>
+                <p className="line-clamp-3">{body}</p>
+              </div>
+              { !published && <div className="bg-[#1f2021] rounded-tl-md text-white px-2 py-1 text-sm font-bold inline-block">Borrador</div>}
             </Card>
           </a>
         ))}
