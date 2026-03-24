@@ -1,13 +1,14 @@
+import type { Request } from "express";
 import { and, desc, eq } from "drizzle-orm";
 import { Router } from "express";
 import z from "zod";
 
 import { db } from "../db";
 import { postsTable } from "../db/schema";
+import { requireOrThrowNotFound } from "../lib/requireOrThrowNotFound";
 import { slugify } from "../lib/slugify";
 import { requireAuth } from "../middleware/auth";
 import { createPostSchema, updatePostSchema } from "../schemas/post";
-import { requireOrThrowNotFound } from "../lib/requireOrThrowNotFound";
 
 async function getPost(slug: string) {
   const [post] = await db
@@ -20,11 +21,17 @@ async function getPost(slug: string) {
 
 const routerPosts = Router();
 
-routerPosts.get("/posts", async (_req, res) => {
-  const posts = await db
-    .select()
-    .from(postsTable)
-    .where(eq(postsTable.published, true)).orderBy(desc(postsTable.id));
+routerPosts.get("/posts", async (req: Request, res) => {
+  const query = db.select().from(postsTable);
+
+  if (!req.cookies.session) {
+    query.where(eq(postsTable.published, true));
+  }
+
+  query.orderBy(desc(postsTable.id));
+
+  const posts = await query;
+
   res.json(posts);
 });
 
@@ -33,7 +40,7 @@ routerPosts.get("/posts/:slug", async (req, res) => {
 
   const post = await getPost(slug);
 
-  requireOrThrowNotFound(post, "el post")
+  requireOrThrowNotFound(post, "el post");
 
   res.json(post);
 });
@@ -45,7 +52,7 @@ routerPosts.post("/posts", async (req, res) => {
   // creacion del slug
   const slug = slugify(input.title);
 
-  const insertResult = await db
+  const [insertResult] = await db
     .insert(postsTable)
     .values({
       body: input.body,
@@ -65,10 +72,10 @@ routerPosts.put("/posts/:slug", requireAuth, async (req, res) => {
   const input = updatePostSchema.parse(req.body);
 
   const post = await getPost(slug);
- 
-  requireOrThrowNotFound(post, "el post")
 
-  const updateResult = await db
+  requireOrThrowNotFound(post, "el post");
+
+  const [updateResult] = await db
     .update(postsTable)
     .set({
       ...input,
@@ -85,7 +92,7 @@ routerPosts.delete("/posts/:slug", requireAuth, async (req, res) => {
 
   const post = await getPost(slug);
 
-  requireOrThrowNotFound(post, "el post")
+  requireOrThrowNotFound(post, "el post");
 
   await db.delete(postsTable).where(eq(postsTable.slug, slug));
 
