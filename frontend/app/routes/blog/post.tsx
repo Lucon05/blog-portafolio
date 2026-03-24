@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 import type { Route } from "./+types/post";
-import type { Post } from "./fetchPost";
+import type { Post } from "./post";
 import { useAuth } from "~/lib/auth";
-import { fetchPost } from "./fetchPost";
+import { fetchPost } from "./post";
 
 export default function Blog({ params: { slug } }: Route.ComponentProps) {
   const [post, setPost] = useState<Post>();
