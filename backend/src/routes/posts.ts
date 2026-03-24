@@ -1,4 +1,4 @@
-import { and, eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import { Router } from "express";
 import z from "zod";
 
@@ -8,7 +8,6 @@ import { slugify } from "../lib/slugify";
 import { requireAuth } from "../middleware/auth";
 import { createPostSchema, updatePostSchema } from "../schemas/post";
 import { requireOrThrowNotFound } from "../lib/requireOrThrowNotFound";
-import assert from "assert";
 
 async function getPost(slug: string) {
   const [post] = await db
@@ -25,7 +24,7 @@ routerPosts.get("/posts", async (_req, res) => {
   const posts = await db
     .select()
     .from(postsTable)
-    .where(eq(postsTable.published, true));
+    .where(eq(postsTable.published, true)).orderBy(desc(postsTable.id));
   res.json(posts);
 });
 

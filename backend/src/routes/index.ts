@@ -6,6 +6,6 @@ import routerPosts from "./posts";
 const router = Router();
 
 router.use(routerPosts);
-router.use(routerAuth);
+router.use("/auth", routerAuth);
 
 export default router;

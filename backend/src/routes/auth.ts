@@ -56,15 +56,27 @@ router.post("/login", async (req, res) => {
 });
 
 router.post("/logout", async (req: Request, res) => {
-  const sessionId = z.string().parse(req.cookies.session);
+  const sessionId = z.string().safeParse(req.cookies.session);
 
-  if (sessionId) {
+  if (sessionId.data) {
     // Borrar la sesión de la base de datos
-    await db.delete(sessions).where(eq(sessions.id, sessionId));
+    await db.delete(sessions).where(eq(sessions.id, sessionId.data));
   }
   // Limpiar la cookie del navegador
   res.clearCookie("session");
   return res.json({ message: "Logged out" });
 });
+
+router.get("/me", (req: Request, res) => {
+  const sessionId = z.string().safeParse(req.cookies.session);
+  console.log(sessionId);
+  
+  if (sessionId.data) {
+    return res.status(204).end();
+  } else {
+    return res.status(401).json({ message: "Not authenticated" });
+  }
+});
+
 
 export default router;
