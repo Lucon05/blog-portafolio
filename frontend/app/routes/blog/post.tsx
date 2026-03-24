@@ -1,35 +1,24 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 import type { Route } from "./+types/post";
-import Footer from "~/components/footer";
-
-interface Post {
-  title: string;
-  body: string;
-  slug: string;
-}
-
-interface BackendError {
-  message: string;
-}
+import type { Post } from "./fetchPost";
+import { useAuth } from "~/lib/auth";
+import { fetchPost } from "./fetchPost";
 
 export default function Blog({ params: { slug } }: Route.ComponentProps) {
-  const [post, setPosts] = useState<Post | BackendError>();
+  const [post, setPost] = useState<Post>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
-    fetch("/api/posts/" + slug)
-      .then((res) => res.json())
-      .then((posts) => {
-        setPosts(posts as Post);
+    fetchPost(slug)
+      .then((post) => {
+        setPost(post);
       })
-      .catch((err) => {
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          console.error(err);
-        }
+      .catch((err: Error) => {
+        setError(err.message);
       })
       .finally(() => {
         setLoading(false);
@@ -40,29 +29,25 @@ export default function Blog({ params: { slug } }: Route.ComponentProps) {
     return "Cargando...";
   }
 
-  if (error) {
-    return "Hubo un error: " + error;
-  }
-
-  if (!post) {
-    return "No encontrado";
-  }
-
   return (
     <>
       <div className="flex flex-col gap-4 p-4">
-        {/* // BackendError */}
-        {"message" in post ? (
-          post.message
-        ) : (
+        {error && "Hubo un error: " + error}
+        {post && (
           <>
             <h1 className="text-2xl font-bold">{post.title}</h1>
             <p className="line-clamp-3">{post.body}</p>
           </>
         )}
-        <a href="/blog" className="underline">Volver</a>
+        {isAuthenticated && (
+          <Link to={"/admin/edit-post/" + slug} className="underline">
+            Editar
+          </Link>
+        )}
+        <Link to="/blog" className="underline">
+          Volver
+        </Link>
       </div>
-      <Footer />
     </>
   );
 }

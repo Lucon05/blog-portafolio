@@ -14,20 +14,87 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/login": {
+    params: {};
+  };
+  "/admin": {
+    params: {};
+  };
+  "/admin/new-post": {
+    params: {};
+  };
+  "/admin/edit-post/:slug": {
+    params: {
+      "slug": string;
+    };
+  };
+  "/blog": {
+    params: {};
+  };
+  "/blog/:slug": {
+    params: {
+      "slug": string;
+    };
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/";
+    page: "/" | "/login" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+  };
+  "components/MainLayout.tsx": {
+    id: "components/MainLayout";
+    page: "/" | "/login" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "routes/home.tsx": {
     id: "routes/home";
     page: "/";
   };
+  "routes/login.tsx": {
+    id: "routes/login";
+    page: "/login";
+  };
+  "components/ProtectedRoute.tsx": {
+    id: "components/ProtectedRoute";
+    page: "/admin" | "/admin/new-post" | "/admin/edit-post/:slug";
+  };
+  "routes/admin/layout.tsx": {
+    id: "routes/admin/layout";
+    page: "/admin" | "/admin/new-post" | "/admin/edit-post/:slug";
+  };
+  "routes/admin/index.tsx": {
+    id: "routes/admin/index";
+    page: "/admin";
+  };
+  "routes/admin/new-post.tsx": {
+    id: "routes/admin/new-post";
+    page: "/admin/new-post";
+  };
+  "routes/admin/edit-post.tsx": {
+    id: "routes/admin/edit-post";
+    page: "/admin/edit-post/:slug";
+  };
+  "routes/blog/index.tsx": {
+    id: "routes/blog/index";
+    page: "/blog";
+  };
+  "routes/blog/post.tsx": {
+    id: "routes/blog/post";
+    page: "/blog/:slug";
+  };
 };
 
 type RouteModules = {
   "root": typeof import("./app/root.tsx");
+  "components/MainLayout": typeof import("./app/components/MainLayout.tsx");
   "routes/home": typeof import("./app/routes/home.tsx");
+  "routes/login": typeof import("./app/routes/login.tsx");
+  "components/ProtectedRoute": typeof import("./app/components/ProtectedRoute.tsx");
+  "routes/admin/layout": typeof import("./app/routes/admin/layout.tsx");
+  "routes/admin/index": typeof import("./app/routes/admin/index.tsx");
+  "routes/admin/new-post": typeof import("./app/routes/admin/new-post.tsx");
+  "routes/admin/edit-post": typeof import("./app/routes/admin/edit-post.tsx");
+  "routes/blog/index": typeof import("./app/routes/blog/index.tsx");
+  "routes/blog/post": typeof import("./app/routes/blog/post.tsx");
 };
