@@ -14,6 +14,7 @@ function Input({ className, label, error, ...inputProps }: InputProps) {
     <label>
       {" "}
       {label}
+      <br />
       <input
         className={cn(
           {},
