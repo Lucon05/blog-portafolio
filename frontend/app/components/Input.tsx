@@ -23,7 +23,7 @@ function Input({ className, label, error, ...inputProps }: InputProps) {
           className,
         )}
         {...inputProps}
-      ></input>
+      />
       <br />
       <span className="text-red-500">{error}</span>
     </label>
