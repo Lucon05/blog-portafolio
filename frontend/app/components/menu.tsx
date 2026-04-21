@@ -1,65 +1,52 @@
 function Menu({
   MenuContenido1,
   MenuContenido2,
-  MenuContenido3,
-  MenuContenido4,
+ 
   MenuContenido5,
   MCW5,
   MCW1,
   MCW2,
-  MCW3,
-  MCW4,
+
 }: {
   MenuContenido1: string;
   MenuContenido2: string;
-  MenuContenido3: string;
-  MenuContenido4: string;
   MenuContenido5: string;
   MCW5: string;
   MCW1: string;
   MCW2: string;
-  MCW3: string;
-  MCW4: string;
+  
 }) {
   return (
     <div className="">
-      <div className="">
-        <aside className="fixed left-0 h-screen flex-col items-center bg-[#722F37] to-0% shadow-lg">
-          <nav className="flex flex-1 flex-col">
-            <div className="mt-30">
-              <button className="sm:text-sx,pt-4 md:text-md l2xl:4xl flex w-12/12 justify-center rounded-lg pt-8 pb-8 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
-                <a className="text-[#f5f5dc]" href={MCW4}>
-                  {MenuContenido4}
-                </a>
-              </button>
+      
+        <div className="  flex-row items-center bg-[#722F37] to-0% shadow-lg">
+          <nav className="">
+            <div className="">
+              
 
-              <button className="sm:text-xs,pt-4 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg pt-8 pb-8 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
+              <button className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
                 <a className="text-[#f5f5dc]" href={MCW1}>
                   {MenuContenido1}
                 </a>
               </button>
 
-              <button className="sm:text-xs,pt-4 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg pt-8 pb-8 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
+              <button className="pt-2 pb-2 sm:text-xs,pt-4 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
                 <a className="text-[#f5f5dc]" href={MCW2}>
                   {MenuContenido2}
                 </a>
               </button>
 
-              <button className="sm:text-xs,pt-4 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg pt-8 pb-8 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
-                <a className="text-[#f5f5dc]" href={MCW3}>
-                  {MenuContenido3}
-                </a>
-              </button>
+              
 
-              <button className="sm:text-xs,pt-4 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg pt-8 pb-8 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
+              <button className="pt-2 pb-2 sm:text-xs,pt-2 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
                 <a className="text-[#f5f5dc]" href={MCW5}>
                   {MenuContenido5}
                 </a>
               </button>
             </div>
           </nav>
-        </aside>
-      </div>
+        </div>
+      
     </div>
   );
 }
