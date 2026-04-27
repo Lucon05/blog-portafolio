@@ -13,32 +13,32 @@ export default function Home() {
         <div className="">
           <Menu
             MenuContenido1={" Über mich "}
-            MCW1={""}
+            MCW1={"AboutMe"}
             MenuContenido2={" Projekte "}
-            MCW2={""}
+            MCW2={"Projekte"}
             MenuContenido5={" Arbeitserfahrung "}
-            MCW5={""}
+            MCW5={"ArbeitsErfahrung"}
           />
         </div>
 
         <div className="">
-          <div className="m-5 p-5">
-            <h2 className="text-center text-2xl">
-              <b>Hallo ich bin Luis</b>
-            </h2>
-            <p className="mt-5 text-center">
-              Si cum multis loqui vis, pluribus linguis tibi discenda est.
-              Linguae internationales magni momenti sunt, quia multi homines
-              terrarum diversarum in orbe terrarum sunt. Sunt plus quam septem
-              milia linguarum in orbe terrarum. Lingua non solum modus est
-              communicationis, linguae mundos aperit. Lingua Arabica, hispanica,
-              sinica, lusitanica, anglica maximi moment sunt. Multi in America
-              Foederata...
-            </p>
-          </div>
+          <div className="flex-nowrap lg:my-20 lg:flex">
+            <div className="m-5 p-5 lg:max-w-4/8">
+              <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
+                <b>Hallo ich bin Luis</b>
+              </h2>
+              <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
+                Ich fange gerade erst mit IT an, weil ich wissen will, wie das
+                alles im Hintergrund funktioniert. Ich lerne am besten, wenn ich
+                Dinge einfach direkt ausprobiere. Deshalb baue ich gerade mein
+                eigenes Blog und verwalte meinen Server bei Hetzner. Jetzt suche
+                ich eine Ausbildung zum Fachinformatiker, um das Ganze richtig
+                zu lernen und später in diesem Bereich zu arbeiten.
+              </p>
+            </div>
             <div className="">
               <Cartica
-                className=""
+                className="lg:mt-40 xl:mt-10"
                 carticaLink={""}
                 photo={
                   "https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-b472ba7/www.goya.com/wp-content/uploads/2023/10/arepas-cornmeal-patties.jpg"
@@ -47,16 +47,16 @@ export default function Home() {
                 title="Auslandspraktikum"
               ></Cartica>
             </div>
-          
-          <div className="">
+          </div>
+          <div className="flex-nowrap md:flex lg:mb-30">
             <Cartica
               className=""
               carticaLink={""}
               photo={
                 "https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-b472ba7/www.goya.com/wp-content/uploads/2023/10/arepas-cornmeal-patties.jpg"
               }
-              textCartica="caramoco dembele"
-              title="Auslandpracktikum"
+              textCartica=""
+              title="Web-Blog"
             ></Cartica>
             <Cartica
               className=""
@@ -67,7 +67,6 @@ export default function Home() {
               textCartica="caramoco dembele"
               title="lolalolita"
             ></Cartica>
-            
           </div>
         </div>
       </div>
