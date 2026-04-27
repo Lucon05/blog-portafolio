@@ -24,25 +24,23 @@ function Menu({
             <div className="">
               
 
-              <button className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
-                <a className="text-[#f5f5dc]" href={MCW1}>
+              
+                <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl " href={MCW1}>
                   {MenuContenido1}
                 </a>
-              </button>
+              
 
-              <button className="pt-2 pb-2 sm:text-xs,pt-4 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
-                <a className="text-[#f5f5dc]" href={MCW2}>
+                <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl " href={MCW2}>
                   {MenuContenido2}
                 </a>
-              </button>
+              
 
               
 
-              <button className="pt-2 pb-2 sm:text-xs,pt-2 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl">
-                <a className="text-[#f5f5dc]" href={MCW5}>
+                <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl " href={MCW5}>
                   {MenuContenido5}
                 </a>
-              </button>
+            
             </div>
           </nav>
         </div>
