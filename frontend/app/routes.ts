@@ -5,6 +5,9 @@ export default [
   layout("components/MainLayout.tsx", [
     index("routes/home.tsx"),
     route("login", "routes/login.tsx"),
+    route("AboutMe", "routes/AboutMe.tsx"),
+    route("ArbeitsErfahrung", "routes/ArbeitsErfahrung.tsx"),
+    route("Projekte", "routes/Projekte.tsx"),
     layout("components/ProtectedRoute.tsx", [
       route("admin", "routes/admin/layout.tsx", [
         index("routes/admin/index.tsx"),
