@@ -17,6 +17,15 @@ type Pages = {
   "/login": {
     params: {};
   };
+  "/AboutMe": {
+    params: {};
+  };
+  "/ArbeitsErfahrung": {
+    params: {};
+  };
+  "/Projekte": {
+    params: {};
+  };
   "/admin": {
     params: {};
   };
@@ -41,11 +50,11 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/login" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+    page: "/" | "/login" | "/AboutMe" | "/ArbeitsErfahrung" | "/Projekte" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "components/MainLayout.tsx": {
     id: "components/MainLayout";
-    page: "/" | "/login" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+    page: "/" | "/login" | "/AboutMe" | "/ArbeitsErfahrung" | "/Projekte" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -54,6 +63,18 @@ type RouteFiles = {
   "routes/login.tsx": {
     id: "routes/login";
     page: "/login";
+  };
+  "routes/AboutMe.tsx": {
+    id: "routes/AboutMe";
+    page: "/AboutMe";
+  };
+  "routes/ArbeitsErfahrung.tsx": {
+    id: "routes/ArbeitsErfahrung";
+    page: "/ArbeitsErfahrung";
+  };
+  "routes/Projekte.tsx": {
+    id: "routes/Projekte";
+    page: "/Projekte";
   };
   "components/ProtectedRoute.tsx": {
     id: "components/ProtectedRoute";
@@ -90,6 +111,9 @@ type RouteModules = {
   "components/MainLayout": typeof import("./app/components/MainLayout.tsx");
   "routes/home": typeof import("./app/routes/home.tsx");
   "routes/login": typeof import("./app/routes/login.tsx");
+  "routes/AboutMe": typeof import("./app/routes/AboutMe.tsx");
+  "routes/ArbeitsErfahrung": typeof import("./app/routes/ArbeitsErfahrung.tsx");
+  "routes/Projekte": typeof import("./app/routes/Projekte.tsx");
   "components/ProtectedRoute": typeof import("./app/components/ProtectedRoute.tsx");
   "routes/admin/layout": typeof import("./app/routes/admin/layout.tsx");
   "routes/admin/index": typeof import("./app/routes/admin/index.tsx");
