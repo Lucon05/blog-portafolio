@@ -8,10 +8,10 @@ function Cartica({
   carticaLink,
 }: {
   className?: string;
-  photo: string;
-  title: string;
-  textCartica: string;
-  carticaLink: string;
+  photo?: string;
+  title?: string;
+  textCartica?: string;
+  carticaLink?: string;
 }) {
   return (
     <div
