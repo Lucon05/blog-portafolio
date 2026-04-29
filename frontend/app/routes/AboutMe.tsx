@@ -1,8 +1,19 @@
 import Cartica from "~/components/carticas";
-
+import { Link } from "react-router";
 export default function AboutMe() {
   return (
     <div>
+      <div className="bg-[#722F37] p-10 flex items-center justify-between text-3xl font-bold text-[#f5f5dc] sm:text-5xl md:text-6xl lg:text-7xl">
+  <h1>Projekte</h1>
+
+
+<Link
+  to="/"
+  className="flex items-center justify-center rounded-lg bg-[#822a34d3] px-5 py-4  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] text-sm md:text-lg   xl:text-2xl  lg:px-10 lg:py-6 "
+>
+  Home
+</Link>
+</div>
       <h2  className=" m-10  text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
         <b>Hallo ich bin Luis</b>
       </h2>

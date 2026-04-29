@@ -23,7 +23,7 @@ export default function Home() {
 
         <div className="">
           <div className="flex-nowrap lg:my-20 lg:flex">
-            <div className="m-5 p-5 lg:max-w-4/8">
+            <div className="m-5 p-5 lg:max-w-5/8">
               <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
                 <b>Hallo ich bin Luis</b>
               </h2>
@@ -41,31 +41,30 @@ export default function Home() {
                 className="lg:mt-40 xl:mt-10"
                 carticaLink={""}
                 photo={
-                  "https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-b472ba7/www.goya.com/wp-content/uploads/2023/10/arepas-cornmeal-patties.jpg"
+                  "Img-Portafolio/PMallorca.jpeg"
                 }
                 textCartica="Wie sah mein IT-Alltag auf der Insel aus? Ein Rückblick auf meine täglichen Wege und Erlebnisse"
                 title="Auslandspraktikum"
               ></Cartica>
             </div>
           </div>
-          <div className="flex-nowrap md:flex lg:mb-30">
+          <div className="flex-nowrap lg:flex lg:mb-30">
             <Cartica
-              className=""
+              className="lg:max-w-1/2"
               carticaLink={""}
               photo={
-                "https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-b472ba7/www.goya.com/wp-content/uploads/2023/10/arepas-cornmeal-patties.jpg"
-              }
-              textCartica=""
+            "Img-Portafolio/EditPost.png"              }
+              textCartica="Full-Stack-System mit React und Express, das Backend läuft, das Design folgt."
               title="Web-Blog"
             ></Cartica>
             <Cartica
-              className=""
+              className="lg:max-w-1/2"
               carticaLink={""}
               photo={
-                "https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-b472ba7/www.goya.com/wp-content/uploads/2023/10/arepas-cornmeal-patties.jpg"
+                "Img-Portafolio/display.jpeg"
               }
-              textCartica="caramoco dembele"
-              title="lolalolita"
+              textCartica="Secondhand-Laptopdisplay wird zu zweitem Monitor für nachhaltiges Setup."
+              title="Second Life Display"
             ></Cartica>
           </div>
         </div>

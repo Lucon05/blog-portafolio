@@ -23,6 +23,9 @@ type Pages = {
   "/ArbeitsErfahrung": {
     params: {};
   };
+  "/AuslandsPraktikum": {
+    params: {};
+  };
   "/Projekte": {
     params: {};
   };
@@ -50,11 +53,11 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/login" | "/AboutMe" | "/ArbeitsErfahrung" | "/Projekte" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+    page: "/" | "/login" | "/AboutMe" | "/ArbeitsErfahrung" | "/AuslandsPraktikum" | "/Projekte" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "components/MainLayout.tsx": {
     id: "components/MainLayout";
-    page: "/" | "/login" | "/AboutMe" | "/ArbeitsErfahrung" | "/Projekte" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+    page: "/" | "/login" | "/AboutMe" | "/ArbeitsErfahrung" | "/AuslandsPraktikum" | "/Projekte" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -68,12 +71,16 @@ type RouteFiles = {
     id: "routes/AboutMe";
     page: "/AboutMe";
   };
-  "routes/ArbeitsErfahrung.tsx": {
-    id: "routes/ArbeitsErfahrung";
+  "routes/Arbeitserfarung/ArbeitsErfahrung.tsx": {
+    id: "routes/Arbeitserfarung/ArbeitsErfahrung";
     page: "/ArbeitsErfahrung";
   };
-  "routes/Projekte.tsx": {
-    id: "routes/Projekte";
+  "routes/Arbeitserfarung/AuslandsPraktikum.tsx": {
+    id: "routes/Arbeitserfarung/AuslandsPraktikum";
+    page: "/AuslandsPraktikum";
+  };
+  "routes/Projeckte/Projekte.tsx": {
+    id: "routes/Projeckte/Projekte";
     page: "/Projekte";
   };
   "components/ProtectedRoute.tsx": {
@@ -112,8 +119,9 @@ type RouteModules = {
   "routes/home": typeof import("./app/routes/home.tsx");
   "routes/login": typeof import("./app/routes/login.tsx");
   "routes/AboutMe": typeof import("./app/routes/AboutMe.tsx");
-  "routes/ArbeitsErfahrung": typeof import("./app/routes/ArbeitsErfahrung.tsx");
-  "routes/Projekte": typeof import("./app/routes/Projekte.tsx");
+  "routes/Arbeitserfarung/ArbeitsErfahrung": typeof import("./app/routes/Arbeitserfarung/ArbeitsErfahrung.tsx");
+  "routes/Arbeitserfarung/AuslandsPraktikum": typeof import("./app/routes/Arbeitserfarung/AuslandsPraktikum.tsx");
+  "routes/Projeckte/Projekte": typeof import("./app/routes/Projeckte/Projekte.tsx");
   "components/ProtectedRoute": typeof import("./app/components/ProtectedRoute.tsx");
   "routes/admin/layout": typeof import("./app/routes/admin/layout.tsx");
   "routes/admin/index": typeof import("./app/routes/admin/index.tsx");
