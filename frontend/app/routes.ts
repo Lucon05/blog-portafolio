@@ -12,6 +12,11 @@ export default [
     route("AuslandsPraktikum", "routes/Arbeitserfarung/AuslandsPraktikum.tsx"),
     
     route("Projekte", "routes/Projeckte/Projekte.tsx"),
+    route("zweiteMonitor", "routes/Projeckte/zweiteMonitor.tsx"),
+    route("AltesPortafolio", "routes/Projeckte/AltesPortafolio.tsx"),
+    route("DasBlog", "routes/Projeckte/DasBlog.tsx"),
+
+
 
 
 
