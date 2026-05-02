@@ -53,7 +53,7 @@ export default function Projekte() {
             Display eines kaputten Laptops mache ich einen externen Monitor. Die
             Idee dahinter ist einfach: Ich brauchte einen zweiten Bildschirm,
             wollte aber keine neue Hardware kaufen. Statt das alte Laptop
-            wegzuwerfen, nutze ich die Teile weiter und setze sie sinnvoll ein.<Link to="/AuslandsPraktikum">
+            wegzuwerfen, nutze ich die Teile weiter und setze sie sinnvoll ein.<Link to="/zweiteMonitor">
   weiter lesen
 </Link>
           </p>
@@ -74,7 +74,7 @@ export default function Projekte() {
           <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
             Dieses Projekt war mein erstes Portfolio, das ich während meiner
             Zeit bei der Azubi Digital Akademie erstellt habe. Damals habe ich
-            gerade erst angefangen, HTML und CSS zu lernen. <Link to="/DasBlog">
+            gerade erst angefangen, HTML und CSS zu lernen. <Link to="/AltesPortafolio">
   weiter lesen
 </Link>
           </p>
