@@ -27,7 +27,7 @@ export default function ArbeitsErfahrung() {
             Blog und verwalte meinen Server bei Hetzner. Jetzt suche ich eine
             Ausbildung zum Fachinformatiker, um das Ganze richtig zu lernen und
             später in diesem Bereich zu arbeiten.
-            <Link to="/Blog">weiter lesen</Link>
+            <Link to="/DasBlog">weiter lesen</Link>
           </p>
         </div>
         <div className="">
