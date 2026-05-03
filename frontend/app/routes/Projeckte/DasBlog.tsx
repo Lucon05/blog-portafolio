@@ -52,14 +52,14 @@ export default function Blog() {
           <div className="">
             <Cartica
               className=""
-              carticaLink={""}
+              carticaLink={"login"}
               photo={"Img-Portafolio/Projekte/ImgLoginAdminBlog.png"}
             ></Cartica>
           </div>
         </div>
 
         <div className="flex-row-reverse lg:flex lg:items-center">
-          <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
+          <div className=" m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Aktueller Stand</b>
             </h2>
@@ -86,14 +86,14 @@ export default function Blog() {
           <div className="">
             <Cartica
               className=""
-              carticaLink={""}
+              carticaLink={"Blog"}
               photo={"Img-Portafolio/Projekte/ImgEditPostBlog.png"}
             ></Cartica>
           </div>
         </div>
 
         <div className="lg:mb-20 lg:flex lg:items-center">
-          <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
+          <div className=" m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Verwendete Tools & Technologien</b>
             </h2>
@@ -110,7 +110,7 @@ export default function Blog() {
           <div className="">
             <Cartica
               className=""
-              carticaLink={""}
+              carticaLink={"Blog"}
               photo={"Img-Portafolio/Projekte/BildEntwuerfBlog.png"}
             ></Cartica>
           </div>
