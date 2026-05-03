@@ -7,14 +7,12 @@ export default function MainLayout() {
   return (
     <AuthProvider>
       <div className="flex min-h-screen flex-col">
-        
         <main className="flex-grow">
           <Outlet />
         </main>
-        
-        <Footer className="flex w-full flex-col items-center bg-[#722F37] text-[#f5f5dc] py-8" />
+
+        <Footer className="flex w-full flex-col items-center bg-[#722F37] py-8 text-[#f5f5dc]" />
       </div>
     </AuthProvider>
   );
 }
-

@@ -1,13 +1,12 @@
- 
-import { Navigate, Outlet,  } from "react-router";
+import { Navigate, Outlet } from "react-router";
 
-import {   useAuth } from "~/lib/auth";
+import { useAuth } from "~/lib/auth";
 
 export default function ProtectedRoute() {
   const { isAuthenticated } = useAuth();
 
   if (isAuthenticated === null) {
-    return "Cargando sesion..."
+    return "Cargando sesion...";
   }
 
   if (!isAuthenticated) {

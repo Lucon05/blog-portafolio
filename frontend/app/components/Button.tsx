@@ -20,7 +20,7 @@ function Button({
   return (
     <button
       className={cn(
-        'px-2 py-1 rounded-sm bg-blue-500 text-white cursor-pointer',
+        "cursor-pointer rounded-sm bg-blue-500 px-2 py-1 text-white",
         {
           "bg-red-500": variant === "danger",
           "bg-blue-500": variant === "primary",

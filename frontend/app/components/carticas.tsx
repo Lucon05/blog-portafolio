@@ -16,7 +16,7 @@ function Cartica({
   return (
     <div
       className={cn(
-        "flex w-auto flex-col items-center rounded-4xl bg-[#722F37] p-4 text-[#f5f5dc] hover:bg-[#A0364C] m-5",
+        "m-5 flex w-auto flex-col items-center rounded-4xl bg-[#722F37] p-4 text-[#f5f5dc] hover:bg-[#A0364C]",
         className,
       )}
     >
@@ -26,7 +26,7 @@ function Cartica({
             {title}
           </h3>
           <img src={photo} alt={title} className="max-w-3/3 bg-white" />
-          <p className="pt-5 text-1xl sm:text-1xl md:text-1.xl text-center lg:text-2xl">
+          <p className="text-1xl sm:text-1xl md:text-1.xl pt-5 text-center lg:text-2xl">
             {textCartica}
           </p>
         </div>
