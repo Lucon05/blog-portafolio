@@ -27,7 +27,7 @@ export default function Home() {
                 <b>Hallo! Ich bin Luis aus Venezuela.</b>
               </h2>
               <p className=" mt-10 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-           Meine Leidenschaft für IT entstand aus der Neugier, wie Systeme im Hintergrund funktionieren. Erste Berufserfahrungen sammelte ich bei einem Praktikum auf Mallorca, wo ich in den letzten vier Wochen auch mit der Entwicklung meines eigenen Blogs begann.
+           Meine Leidenschaft für die IT entstand aus der Neugier, wie Systeme im Hintergrund funktionieren. Erste Berufserfahrungen sammelte ich bei einem Praktikum auf Mallorca, wo ich in den letzten vier Wochen auch mit der Entwicklung meines eigenen Blogs begann.
               </p>
               <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
                 Dieses Projekt führe ich seitdem kontinuierlich fort. Ich lerne am liebsten durch direktes Ausprobieren: Ich verwalte meinen eigenen Server bei Hetzner, kümmere mich um Updates und veröffentliche dort meine Web-Projekte. Jetzt suche ich eine Ausbildung zum Fachinformatiker, um meine praktischen Erfahrungen mit professioneller Theorie zu vertiefen und in der IT-Branche voll durchzustarten.
