@@ -108,10 +108,13 @@ export default function EditPost({ params: { slug } }: Route.ComponentProps) {
       {error && <span className="text-red-500">Error: {error}</span>}
       <Button onClick={savePost} disabled={submitting}>
         Save
-        
       </Button>
-      <Button className="pb-"
-      onClick={removePost} disabled={submitting} variant="danger">
+      <Button
+        className="pb-"
+        onClick={removePost}
+        disabled={submitting}
+        variant="danger"
+      >
         Delete
       </Button>
     </div>

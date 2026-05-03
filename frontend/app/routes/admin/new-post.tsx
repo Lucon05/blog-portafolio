@@ -8,14 +8,15 @@ import { Textarea } from "~/components/textarea";
 import { createPost } from "../blog/post";
 
 export default function PutNewPost() {
-  const [postData, setPostData] = useState({ // se desectrustura el post data 
+  const [postData, setPostData] = useState({
+    // se desectrustura el post data
     title: "",
     body: "",
     published: false,
   });
-  const navigate = useNavigate();                           //aqui hay 3 variables  una para navegar
-  const [submitting, setSubmitting] = useState(false);   //una para saber si el post se a subido o slo se guardo  pero mas adelante se hace una funcioon  que es savePost  //el usstates falso  porque despues puede cambiar de estado  si se publica o no en el checkbox
-  const [error, setError] = useState<string | null>(null);    // errors
+  const navigate = useNavigate(); //aqui hay 3 variables  una para navegar
+  const [submitting, setSubmitting] = useState(false); //una para saber si el post se a subido o slo se guardo  pero mas adelante se hace una funcioon  que es savePost  //el usstates falso  porque despues puede cambiar de estado  si se publica o no en el checkbox
+  const [error, setError] = useState<string | null>(null); // errors
 
   async function savePost() {
     try {
