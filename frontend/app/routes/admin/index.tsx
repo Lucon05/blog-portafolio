@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 import Button from "~/components/Button";
-import { Card } from "~/components/CardPortfolio";
+import { Card } from "~/components/card";
 import { useAuth } from "~/lib/auth";
 
 export default function AdminPage() {
