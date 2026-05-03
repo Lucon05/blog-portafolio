@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import Cartica from "~/components/carticas";
+import CardPortfolio from "~/components/CardPortfolio";
 
 export default function AltesPortafolio() {
   return (
@@ -16,7 +16,7 @@ export default function AltesPortafolio() {
         </Link>
       </div>
       <div>
-        <div className="text-[#2D2D2D] flex-row-reverse lg:mt-20 lg:flex lg:items-center">
+        <div className="flex-row-reverse text-[#2D2D2D] lg:mt-20 lg:flex lg:items-center">
           <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
               <b>Projektbeschreibung: </b>
@@ -26,22 +26,27 @@ export default function AltesPortafolio() {
               Zeit bei der Azubi Digital Akademie erstellt habe. Damals habe ich
               gerade erst angefangen, HTML und CSS zu lernen. Ich habe die Seite
               komplett selbst aufgebaut, um ein Gefühl dafür zu bekommen, wie
-              Webseiten strukturiert und gestaltet werden. <a className=" text-center hover:text-[#822a34d3] sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl"
-              href="https://lucon05.github.io/web-Portafolio/index.html"><b>zum Alten Portfolio</b></a>
+              Webseiten strukturiert und gestaltet werden.{" "}
+              <a
+                className="text-center hover:text-[#822a34d3] sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl"
+                href="https://lucon05.github.io/web-Portafolio/index.html"
+              >
+                <b>zum Alten Portfolio</b>
+              </a>
             </p>
             <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Status: </b>Abgeschlossen
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
-              carticaLink="https://lucon05.github.io/web-Portafolio/index.html"
+              CardPortfolioLink="https://lucon05.github.io/web-Portafolio/index.html"
               photo={"Img-Portafolio/Projekte/ImgOldCode.png"}
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
-        <div className=" text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
+        <div className="text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
           <div className="lg m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
               <b>Was ich dabei gelernt habe: </b>
@@ -62,11 +67,11 @@ export default function AltesPortafolio() {
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
               photo={"Img-Portafolio/Projekte/ImgOldPortafolio.png"}
-              carticaLink="https://lucon05.github.io/web-Portafolio/index.html"
-            ></Cartica>
+              CardPortfolioLink="https://lucon05.github.io/web-Portafolio/index.html"
+            ></CardPortfolio>
           </div>
         </div>
       </div>

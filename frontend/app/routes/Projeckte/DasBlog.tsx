@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import Cartica from "~/components/carticas";
+import CardPortfolio from "~/components/CardPortfolio";
 
 export default function Blog() {
   return (
@@ -45,59 +45,58 @@ export default function Blog() {
                 to="/login"
                 className="mt-5 text-center hover:text-[#822a34d3] sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl"
               >
-<b>Zum Login des Blogs  </b>              </Link>
+                <b>Zum Login des Blogs </b>{" "}
+              </Link>
               &nbsp;
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
-              carticaLink={"login"}
+              CardPortfolioLink={"login"}
               photo={"Img-Portafolio/Projekte/ImgLoginAdminBlog.png"}
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
 
         <div className="flex-row-reverse lg:flex lg:items-center">
-          <div className=" m-5 p-5 lg:max-w-4/8">
+          <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Aktueller Stand</b>
             </h2>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               Das Projekt ist noch in Arbeit und wird Schritt für Schritt
               erweitert.
             </p>
             <h2 className="mt-10 text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Geplante Implementierungen</b>
             </h2>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               - Design-Optimierung
             </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               - Funktionale Erweiterung
-
-
             </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               - Strukturelle Verbesserung
             </p>
           </div>
 
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
-              carticaLink={"Blog"}
+              CardPortfolioLink={"Blog"}
               photo={"Img-Portafolio/Projekte/ImgEditPostBlog.png"}
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
 
         <div className="lg:mb-20 lg:flex lg:items-center">
-          <div className=" m-5 p-5 lg:max-w-4/8">
+          <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Verwendete Tools & Technologien</b>
             </h2>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               Für die Umsetzung dieses Projekts nutze ich verschiedene
               Technologien im Frontend und Backend. Im Frontend arbeite ich mit
               React, React Router und TypeScript, während ich im Backend
@@ -108,11 +107,11 @@ export default function Blog() {
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
-              carticaLink={"Blog"}
+              CardPortfolioLink={"Blog"}
               photo={"Img-Portafolio/Projekte/BildEntwuerfBlog.png"}
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
       </div>

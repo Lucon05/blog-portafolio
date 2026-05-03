@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 
-import Cartica from "~/components/carticas";
+import CardPortfolio from "~/components/CardPortfolio";
 
-export default function zweiteMonitor() {
+export default function ZweiterMonitor() {
   return (
     <div>
       <div className="items-center justify-between bg-[#722F37] p-10 text-3xl font-bold text-[#f5f5dc] sm:text-5xl md:flex md:text-6xl lg:text-7xl">
@@ -15,12 +15,12 @@ export default function zweiteMonitor() {
         </Link>
       </div>
       <div>
-        <div className=" lg:flex lg:mt-14 lg:items-center">
-          <div className="m-5  p-5 lg:max-w-4/8 ">
+        <div className="lg:mt-14 lg:flex lg:items-center">
+          <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Projektbeschreibung</b>
             </h2>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               In diesem Projekt gebe ich alter Hardware ein zweites Leben. Aus
               dem Display eines kaputten Laptops mache ich einen externen
               Monitor. Die Idee dahinter ist einfach: Als ich an meinen
@@ -31,76 +31,71 @@ export default function zweiteMonitor() {
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
               photo={"Img-Portafolio/Projekte/laptop.jpeg"}
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
 
         <div className="flex-row-reverse lg:flex lg:items-center">
-          <div className=" m-5 p-5 lg:max-w-4/8">
+          <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Technische Vorbereitung & Analyse</b>
             </h2>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Analyse & Demontage:</b> Ich habe den Laptop vorsichtig
               zerlegt, um das Display unbeschädigt auszubauen.
             </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Technische Identifikation:</b> Durch die Modellnummer konnte
               ich herausfinden, welche Schnittstelle das Display nutzt
               (LVDS/eDP) und was ich dafür brauche.
             </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Komponentenauswahl:</b> Danach habe ich ein passendes
               Controller-Board gesucht und bestellt, das das Signal (z. B. HDMI)
               für das Display umwandelt.
             </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Aktueller Stand: </b>
               Das Projekt ist noch nicht fertig. Ich warte aktuell auf die
               Lieferung der Controller-Platine, um das Display testen zu können.
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className=""
               photo={"Img-Portafolio/Projekte/ImgOldDispaly2.jpg"}
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
 
         <div className="lg:mb-20 lg:flex lg:items-center">
-          <div className=" m-5 p-5 lg:max-w-4/8">
+          <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Geplante nächste Schritte</b>
             </h2>
 
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Funktionstest:</b> Prüfen, ob das Display richtig funktioniert
               (Bild, Beleuchtung).
             </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
+            <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Gehäusebau: </b> Später möchte ich ein einfaches Gehäuse bauen,
               damit alles geschützt ist und sauber aussieht.
             </p>
           </div>
           <div className="">
-            <Cartica
+            <CardPortfolio
               className="lg: xl:mt-10"
               photo={
                 "Img-Portafolio/Projekte/WhatsApp Image 2026-04-29 at 23.19.37.jpeg"
               }
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

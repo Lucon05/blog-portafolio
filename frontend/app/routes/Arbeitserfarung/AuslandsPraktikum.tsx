@@ -1,108 +1,86 @@
-import { Link } from "react-router"
-import Cartica from "~/components/carticas"
+import { Link } from "react-router";
 
-export default function AuslandsPraktikum (){
-    return(<div>
-        <div>
-      <div className="items-center justify-between bg-[#722F37] p-10 text-3xl font-bold text-[#f5f5dc] sm:text-5xl md:flex md:text-6xl lg:text-7xl">
-        <h1 className="text-center md:text-start"> Auslandspraktikum</h1>
-        <Link
-          to="/Projekte"
-          className="mt-5 flex items-center justify-center rounded-lg bg-[#822a34d3] px-10 py-4 text-sm text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-lg xl:text-2xl"
-        >
-          Zurück
-        </Link>
-      </div>
+import CardPortfolio from "~/components/CardPortfolio";
+
+export default function AuslandsPraktikum() {
+  return (
+    <div>
       <div>
-        <div className="  text-[#2D2D2D] lg:flex lg:mt-14 lg:items-center">
-          <div className="m-5  p-5 lg:max-w-4/8 ">
-            <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
-              <b>Projektbeschreibung</b>
-            </h2>
-            <p className=" text-[#2D2D2D] mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              In diesem Projekt gebe ich alter Hardware ein zweites Leben. Aus
-              dem Display eines kaputten Laptops mache ich einen externen
-              Monitor. Die Idee dahinter ist einfach: Als ich an meinen
-              Projekten gearbeitet habe, habe ich gemerkt, dass ich einen
-              zweiten Bildschirm brauche, um einen besseren Überblick zu
-              behalten. Statt neue Hardware zu kaufen, nutze ich die vorhandenen
-              Teile weiter und setze sie sinnvoll ein.
-            </p>
-          </div>
-          <div className="">
-            <Cartica
-              className="lg:mt-15 xl:mt-10"
-              carticaLink={""}
-              photo={"Img-Portafolio/Arbeitserfahrung/WegzurArbeit.png"}
-            ></Cartica>
-          </div>
+        <div className="items-center justify-between bg-[#722F37] p-10 text-3xl font-bold text-[#f5f5dc] sm:text-5xl md:flex md:text-6xl lg:text-7xl">
+          <h1 className="text-center md:text-start"> Auslandspraktikum</h1>
+          <Link
+            to="/ArbeitsErfahrung"
+            className="mt-5 flex items-center justify-center rounded-lg bg-[#822a34d3] px-10 py-4 text-sm text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-lg xl:text-2xl"
+          >
+            Zurück
+          </Link>
         </div>
-
-        <div className="  text-[#2D2D2D] flex-row-reverse lg:flex lg:items-center">
-          <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
-            <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
-              <b>Technische Vorbereitung & Analyse</b>
-            </h2>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
-              <b>Analyse & Demontage:</b> Ich habe den Laptop vorsichtig
-              zerlegt, um das Display unbeschädigt auszubauen.
-            </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              <b>Technische Identifikation:</b> Durch die Modellnummer konnte
-              ich herausfinden, welche Schnittstelle das Display nutzt
-              (LVDS/eDP) und was ich dafür brauche.
-            </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-
-              <b>Komponentenauswahl:</b> Danach habe ich ein passendes
-              Controller-Board gesucht und bestellt, das das Signal (z. B. HDMI)
-              für das Display umwandelt.
-            </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
-              <b>Aktueller Stand: </b>
-              Das Projekt ist noch nicht fertig. Ich warte aktuell auf die
-              Lieferung der Controller-Platine, um das Display testen zu können.
-            </p>
+        <div>
+          <div className="text-[#2D2D2D] lg:mt-14 lg:flex lg:items-center">
+            <div className="m-5 p-5 lg:max-w-4/8">
+              <p className="mt-5 text-center text-[#2D2D2D] sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+                Mein Praktikum auf Mallorca war eine sehr lehrreiche Zeit, die
+                mir viel Disziplin abverlangt hat. Da ich in Santa Ponça wohnte,
+                aber in Santa Maria del Camí arbeitete, war ich täglich über
+                zwei Stunden unterwegs. Trotzdem habe ich meine Arbeitszeit von
+                11:00 bis 19:00 Uhr immer zuverlässig eingehalten.
+              </p>
+            </div>
+            <div className="">
+              <CardPortfolio
+                className=""
+                photo={"Img-Portafolio/Arbeitserfahrung/WegzurArbeit.png"}
+              ></CardPortfolio>
+            </div>
           </div>
-          <div className="">
-            <Cartica
-              className=""
-              carticaLink={""}
-              photo={"Img-Portafolio/Arbeitserfahrung/PMallorca.jpeg"}
-            ></Cartica>
-          </div>
-        </div>
 
-        <div className=" ml-50 text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
-          <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
-            <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
-              <b>Geplante nächste Schritte</b>
-            </h2>
-
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
-              <b>Funktionstest:</b> Prüfen, ob das Display richtig funktioniert
-              (Bild, Beleuchtung).
-            </p>
-            <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              
-              <b>Gehäusebau: </b> Später möchte ich ein einfaches Gehäuse bauen,
-              damit alles geschützt ist und sauber aussieht{" "}
-            </p>
+          <div className="flex-row-reverse text-[#2D2D2D] lg:flex lg:items-center">
+            <div className="m-5 p-5 lg:max-w-4/8">
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+                In der ersten Woche habe ich mich intensiv mit der
+                Systemadministration beschäftigt, Linux Ubuntu installiert und
+                die Arbeit mit dem Terminal gelernt. Nach zwei Wochen, in denen
+                ich die internen Projektabläufe der Firma kennenlernen durfte,
+                startete ich in der vierten Woche mein Full-Stack-Projekt: Ein
+                persönliches Portfolio mit Blog-Funktion auf Basis von React,
+                Tailwind CSS und Node.js. Besonders spannend war dabei die
+                Arbeit an der REST-API, der SQL-Datenbank und dem Login-System.
+                Das Projekt läuft bereits erfolgreich auf meinem eigenen Server.
+              </p>
+            </div>
+            <div className="">
+              <CardPortfolio
+                className=""
+                photo={"Img-Portafolio/Arbeitserfahrung/PMallorca.jpeg"}
+              ></CardPortfolio>
+            </div>
           </div>
-          <div className="">
-            <Cartica
-              className="lg: xl:mt-10"
-              carticaLink={""}
-              photo={
-                "Img-Portafolio/Arbeitserfahrung/download1.png"
-              }
-            ></Cartica>
+
+          <div className="text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
+            <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+                <b>Hinweis: </b> Die Blog-Funktion befindet sich aktuell noch in
+                der aktiven Bearbeitung.{" "}
+                <Link
+                  className="text-center hover:text-[#822a34d3] sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl"
+                  to="/DasBlog"
+                >
+                  <b>
+                    Mehr Informationen zum aktuellen Stand des Blogs findest du
+                    hier.
+                  </b>
+                </Link>
+              </p>
+            </div>
+            <div className="">
+              <CardPortfolio
+                className=""
+                photo={"Img-Portafolio/Arbeitserfahrung/download1.png"}
+              ></CardPortfolio>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>)
+  );
 }

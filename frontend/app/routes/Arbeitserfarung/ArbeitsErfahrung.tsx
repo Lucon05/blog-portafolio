@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import Cartica from "~/components/carticas";
+import CardPortfolio from "~/components/CardPortfolio";
 
 export default function ArbeitsErfahrung() {
   return (
@@ -12,49 +12,61 @@ export default function ArbeitsErfahrung() {
           to="/"
           className="mt-5 flex items-center justify-center rounded-lg bg-[#822a34d3] px-10 py-4 text-sm text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-lg xl:text-2xl"
         >
-          Home
+          Zurück
         </Link>
       </div>
-      <div className="  items-center text-[#2D2D2D] lg:mt-10 lg:flex">
+      <div className="items-center text-[#2D2D2D] lg:mt-10 lg:flex">
         <div className="m-5 p-5 lg:max-w-4/8">
-          <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
-            <b>Auslandpracktikum</b>
-          </h2>
-          <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-            Dieses Projekt ist ein Lernprojekt, in dem ich einen eigenen Blog
-            entwickle. Ziel ist es, praktische Erfahrungen in der
-            Full-Stack-Entwicklung zu sammeln und zu verstehen, wie Frontend,
-            Backend und Datenbank zusammenarbeiten.
-            <Link to="/AuslandsPraktikum"> Weiter lesen</Link>
+          <Link to="/AuslandsPraktikum" className="">
+            <h2 className="text-center text-2xl hover:text-[#822a34d3] sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
+              <b>Auslandspraktikum</b>
+            </h2>
+          </Link>
+          <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
+            Mein Praktikum auf Mallorca war sehr lehrreich und erforderte wegen
+            des täglichen Arbeitswegs von zwei Stunden viel Disziplin. Nach
+            einer Einführung in Linux und das Terminal lernte ich die internen
+            Projektabläufe kennen. Ab der vierten Woche entwickelte ich
+            eigenständig ein Full-Stack-Projekt mit React, Tailwind CSS und
+            Node.js. Dabei sammelte ich wichtige Erfahrungen mit REST-APIs,
+            SQL-Datenbanken und dem Deployment auf eigenen Servern.
+            <Link
+              className="text-center hover:text-[#822a34d3] sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl"
+              to="/AuslandsPraktikum"
+            >
+              <b> Weiterlesen </b>
+            </Link>
           </p>
         </div>
         <div className="">
-          <Cartica
-            className="lg:ml-50"
-            carticaLink={""}
+          <CardPortfolio
+            className=""
+            CardPortfolioLink={"AuslandsPraktikum"}
             photo={"Img-Portafolio/Arbeitserfahrung/download1.png"}
-          ></Cartica>
+          ></CardPortfolio>
         </div>
       </div>
       <div className="lg: flex-row-reverse items-center text-[#2D2D2D] lg:flex">
         <div className="m-5 p-5 lg:max-w-4/8">
           <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
-            <b>Pracktikum PhoneBros</b>
+            <b>Praktikum beim PhoneBros</b>
           </h2>
           <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-            In diesem Projekt gebe ich alter Hardware ein zweites Leben. Aus dem
-            Display eines kaputten Laptops mache ich einen externen Monitor. Die
-            Idee dahinter ist einfach: Ich brauchte einen zweiten Bildschirm,
-            wollte aber keine neue Hardware kaufen. Statt das alte Laptop
-            wegzuwerfen, nutze ich die Teile weiter und setze sie sinnvoll ein.
+            In diesem Praktikum lag mein Schwerpunkt auf der technischen
+            Diagnose von Geräten und der Qualitätskontrolle. Ich habe
+            Reparaturaufträge entgegengenommen und für die weitere Bearbeitung
+            vorbereitet. Zudem war ich für die Lagerverwaltung zuständig und
+            habe Kunden zu technischen Fragen beraten. Dieser Einblick in die
+            IT-Hardware hat mir geholfen, technische Abläufe besser zu
+            verstehen.
           </p>
         </div>
         <div className="">
-          <Cartica
+          <CardPortfolio
             className=" "
-            carticaLink={""}
+            CardPortfolioLink={""}
             photo={"Img-Portafolio/Arbeitserfahrung/Phonebros.jpeg"}
-          ></Cartica>
+          ></CardPortfolio>
         </div>
       </div>{" "}
       <div className="items-center text-[#2D2D2D] lg:flex">
@@ -63,17 +75,19 @@ export default function ArbeitsErfahrung() {
             <b>Minijob Park-Gastro GbR, Leipzig </b>
           </h2>
           <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-            Dieses Projekt war mein erstes Portfolio, das ich während meiner
-            Zeit bei der Azubi Digital Akademie erstellt habe. Damals habe ich
-            gerade erst angefangen, HTML und CSS zu lernen.
+            In der Gastronomie habe ich ein Jahr lang das Team im Küchenbereich
+            und im Spüldienst unterstützt. Diese Tätigkeit hat mir geholfen,
+            meine Belastbarkeit und Teamfähigkeit unter Beweis zu stellen.
+            Besonders in stressigen Zeiten habe ich gelernt, zuverlässig und
+            konzentriert mit anderen zusammenzuarbeiten.
           </p>
         </div>
         <div className="">
-          <Cartica
+          <CardPortfolio
             className=""
-            carticaLink={""}
+            CardPortfolioLink={""}
             photo={"Img-Portafolio/Arbeitserfahrung/glashaus-leipzig-01.jpg"}
-          ></Cartica>
+          ></CardPortfolio>
         </div>
       </div>
       <div className="flex-row-reverse text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
@@ -82,21 +96,21 @@ export default function ArbeitsErfahrung() {
             <b>Autohaus Hagen GmbH, Leipzig </b>
           </h2>
           <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-            In diesem Projekt gebe ich alter Hardware ein zweites Leben. Aus dem
-            Display eines kaputten Laptops mache ich einen externen Monitor. Die
-            Idee dahinter ist einfach: Ich brauchte einen zweiten Bildschirm,
-            wollte aber keine neue Hardware kaufen. Statt das alte Laptop
-            wegzuwerfen, nutze ich die Teile weiter und setze sie sinnvoll ein.
+            Dieses Praktikum bot mir einen Einblick in die Verwaltung und das
+            Handwerk. Ich habe administrative Aufgaben im Büro übernommen und
+            das Team in der Werkstatt bei verschiedenen Abläufen unterstützt.
+            Dadurch konnte ich meine organisatorischen Fähigkeiten sowie mein
+            technisches Interesse weiterentwickeln.
           </p>
         </div>
         <div className="">
-          <Cartica
+          <CardPortfolio
             className=""
-            carticaLink={""}
+            CardPortfolioLink={""}
             photo={
               "Img-Portafolio/Arbeitserfahrung/autohaus-walter-hagen_OL.jpg"
             }
-          ></Cartica>
+          ></CardPortfolio>
         </div>
       </div>{" "}
     </div>
