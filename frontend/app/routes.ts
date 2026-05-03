@@ -6,18 +6,13 @@ export default [
     index("routes/home.tsx"),
     route("login", "routes/login.tsx"),
 
-    
     route("ArbeitsErfahrung", "routes/Arbeitserfarung/ArbeitsErfahrung.tsx"),
     route("AuslandsPraktikum", "routes/Arbeitserfarung/AuslandsPraktikum.tsx"),
-    
+
     route("Projekte", "routes/Projeckte/Projekte.tsx"),
-    route("zweiteMonitor", "routes/Projeckte/zweiteMonitor.tsx"),
+    route("ZweiterMonitor", "routes/Projeckte/ZweiterMonitor.tsx"),
     route("AltesPortafolio", "routes/Projeckte/AltesPortafolio.tsx"),
     route("DasBlog", "routes/Projeckte/DasBlog.tsx"),
-
-
-
-
 
     layout("components/ProtectedRoute.tsx", [
       route("admin", "routes/admin/layout.tsx", [
