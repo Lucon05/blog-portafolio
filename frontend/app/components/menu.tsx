@@ -1,13 +1,13 @@
 function Menu({
-  MenuContenido2,
+  Inhalt2,
 
-  MenuContenido5,
+  Inhalt5,
   MCW5,
 
   MCW2,
 }: {
-  MenuContenido2: string;
-  MenuContenido5: string;
+  Inhalt2: string;
+  Inhalt5: string;
   MCW5: string;
 
   MCW2: string;
@@ -23,7 +23,7 @@ function Menu({
                 className="sm:text-xs,pt-3 flex w-12/12 items-center justify-center rounded-lg pt-1 pb-1 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-2xl lg:p-4 lg:text-4xl"
                 href={MCW2}
               >
-                {MenuContenido2}
+                {Inhalt2}
               </a>
             </b>
 
@@ -32,7 +32,7 @@ function Menu({
                 className="sm:text-xs,pt-3 l2xl:4xl flex w-12/12 items-center justify-center rounded-lg pt-1 pb-1 text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-2xl lg:p-4 lg:text-4xl"
                 href={MCW5}
               >
-                {MenuContenido5}
+                {Inhalt5}
               </a>
             </b>
           </div>

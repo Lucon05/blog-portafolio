@@ -4,7 +4,7 @@ function Footer({ className }: { className?: string }) {
     <div className={className}>
       <div>
         <p className="mt-5 text-2xl">
-          <b>Contact</b>
+          <b>Kontact</b>
         </p>
       </div>
       <div className="m-5 flex flex-row space-x-10">

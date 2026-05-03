@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import Cartica from "~/components/carticas";
+import CardPortfolio from "~/components/CardPortfolio";
 import Menu from "~/components/menu";
 
 export function meta(_metaArgs: Route.MetaArgs) {
@@ -12,53 +12,61 @@ export default function Home() {
       <div className="">
         <div className="">
           <Menu
-
-            MenuContenido2={" Projekte "}
+            Inhalt2={" Projekte "}
             MCW2={"Projekte"}
-            MenuContenido5={" Arbeitserfahrung "}
+            Inhalt5={" Arbeitserfahrung "}
             MCW5={"ArbeitsErfahrung"}
           />
         </div>
 
-        <div className=" text-[#2D2D2D]">
+        <div className="text-[#2D2D2D]">
           <div className="flex-nowrap lg:my-20 lg:flex lg:items-center">
             <div className="m-5 p-5 lg:max-w-5/8">
               <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
                 <b>Hallo! Ich bin Luis aus Venezuela.</b>
               </h2>
-              <p className=" mt-10 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-           Meine Leidenschaft für die IT entstand aus der Neugier, wie Systeme im Hintergrund funktionieren. Erste Berufserfahrungen sammelte ich bei einem Praktikum auf Mallorca, wo ich in den letzten vier Wochen auch mit der Entwicklung meines eigenen Blogs begann.
+              <p className="mt-10 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
+                Meine Leidenschaft für die IT entstand aus der Neugier, wie
+                Systeme im Hintergrund funktionieren. Erste Berufserfahrungen
+                sammelte ich bei einem Praktikum auf Mallorca, wo ich in den
+                letzten vier Wochen auch mit der Entwicklung meines eigenen
+                Blogs begann.
               </p>
-              <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-                Dieses Projekt führe ich seitdem kontinuierlich fort. Ich lerne am liebsten durch direktes Ausprobieren: Ich verwalte meinen eigenen Server bei Hetzner, kümmere mich um Updates und veröffentliche dort meine Web-Projekte. Jetzt suche ich eine Ausbildung zum Fachinformatiker, um meine praktischen Erfahrungen mit professioneller Theorie zu vertiefen und in der IT-Branche voll durchzustarten.
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
+                Dieses Projekt führe ich seitdem kontinuierlich fort. Ich lerne
+                am liebsten durch direktes Ausprobieren: Ich verwalte meinen
+                eigenen Server bei Hetzner, kümmere mich um Updates und
+                veröffentliche dort meine Web-Projekte. Jetzt suche ich eine
+                Ausbildung zum Fachinformatiker, um meine praktischen
+                Erfahrungen mit professioneller Theorie zu vertiefen und in der
+                IT-Branche voll durchzustarten.
               </p>
-              
             </div>
             <div className="">
-              <Cartica
+              <CardPortfolio
                 className="lg:mt-10"
-                carticaLink={"Auslandspraktikum"}
+                CardPortfolioLink={"Auslandspraktikum"}
                 photo={"Img-Portafolio/Arbeitserfahrung/PMallorca.jpeg"}
-                textCartica="Wie sah mein IT-Alltag auf der Insel aus? Ein Rückblick auf meine täglichen Wege und Erlebnisse"
+                textCardPortfolio="Wie sah mein IT-Alltag auf der Insel aus? Ein Rückblick auf meine täglichen Wege und Erlebnisse"
                 title="Auslandspraktikum"
-              ></Cartica>
+              ></CardPortfolio>
             </div>
           </div>
           <div className="flex-nowrap lg:mb-20 lg:flex">
-            <Cartica
+            <CardPortfolio
               className="lg:max-w-1/2"
-              carticaLink={"MeinBlog"}
+              CardPortfolioLink={"DasBlog"}
               photo={"Img-Portafolio/Projekte/EditPost.png"}
-              textCartica="Full-Stack-System mit React und Express, das Backend läuft, das Design folgt."
+              textCardPortfolio="Full-Stack-System mit React und Express, das Backend läuft, das Design folgt."
               title="Web-Blog"
-            ></Cartica>
-            <Cartica
+            ></CardPortfolio>
+            <CardPortfolio
               className="lg:max-w-1/2"
-              carticaLink={"zweiteMonitor"}
+              CardPortfolioLink={"ZweiterMonitor"}
               photo={"Img-Portafolio/Projekte/display.jpeg"}
-              textCartica="Secondhand-Laptopdisplay wird zu zweitem Monitor für nachhaltiges Setup."
+              textCardPortfolio="Secondhand-Laptopdisplay wird zu zweitem Monitor für nachhaltiges Setup."
               title="Second Life Display"
-            ></Cartica>
+            ></CardPortfolio>
           </div>
         </div>
       </div>

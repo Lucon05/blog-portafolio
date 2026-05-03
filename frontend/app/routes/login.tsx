@@ -1,17 +1,17 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { Card } from "@mui/material";
 import { Navigate, useNavigate } from "react-router";
 
-import Button from "~/components/Button"; 
-import Input from "~/components/Input"; 
-import { cn } from "~/lib/cn";
+import Button from "~/components/Button";
+import Input from "~/components/Input";
 import { useAuth } from "~/lib/auth";
+import { cn } from "~/lib/cn";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<null | string>(null);
-  const {isAuthenticated, login} = useAuth();
+  const { isAuthenticated, login } = useAuth();
   const navigate = useNavigate();
 
   async function handleLogin() {
@@ -20,7 +20,7 @@ export default function Login() {
       void navigate("/admin");
     } catch (err) {
       if (err instanceof Error) {
-        setError(err.message)
+        setError(err.message);
       } else {
         setError("Ocurrio un error desconocido");
       }
@@ -28,7 +28,7 @@ export default function Login() {
   }
 
   if (isAuthenticated === null) {
-    return "Cargando sesion..."
+    return "Cargando sesion...";
   }
 
   if (isAuthenticated) {

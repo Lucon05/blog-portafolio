@@ -26,7 +26,7 @@ type Pages = {
   "/Projekte": {
     params: {};
   };
-  "/zweiteMonitor": {
+  "/ZweiterMonitor": {
     params: {};
   };
   "/AltesPortafolio": {
@@ -59,11 +59,11 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/login" | "/ArbeitsErfahrung" | "/AuslandsPraktikum" | "/Projekte" | "/zweiteMonitor" | "/AltesPortafolio" | "/DasBlog" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+    page: "/" | "/login" | "/ArbeitsErfahrung" | "/AuslandsPraktikum" | "/Projekte" | "/ZweiterMonitor" | "/AltesPortafolio" | "/DasBlog" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "components/MainLayout.tsx": {
     id: "components/MainLayout";
-    page: "/" | "/login" | "/ArbeitsErfahrung" | "/AuslandsPraktikum" | "/Projekte" | "/zweiteMonitor" | "/AltesPortafolio" | "/DasBlog" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
+    page: "/" | "/login" | "/ArbeitsErfahrung" | "/AuslandsPraktikum" | "/Projekte" | "/ZweiterMonitor" | "/AltesPortafolio" | "/DasBlog" | "/admin" | "/admin/new-post" | "/admin/edit-post/:slug" | "/blog" | "/blog/:slug";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -85,9 +85,9 @@ type RouteFiles = {
     id: "routes/Projeckte/Projekte";
     page: "/Projekte";
   };
-  "routes/Projeckte/zweiteMonitor.tsx": {
-    id: "routes/Projeckte/zweiteMonitor";
-    page: "/zweiteMonitor";
+  "routes/Projeckte/ZweiterMonitor.tsx": {
+    id: "routes/Projeckte/ZweiterMonitor";
+    page: "/ZweiterMonitor";
   };
   "routes/Projeckte/AltesPortafolio.tsx": {
     id: "routes/Projeckte/AltesPortafolio";
@@ -135,7 +135,7 @@ type RouteModules = {
   "routes/Arbeitserfarung/ArbeitsErfahrung": typeof import("./app/routes/Arbeitserfarung/ArbeitsErfahrung.tsx");
   "routes/Arbeitserfarung/AuslandsPraktikum": typeof import("./app/routes/Arbeitserfarung/AuslandsPraktikum.tsx");
   "routes/Projeckte/Projekte": typeof import("./app/routes/Projeckte/Projekte.tsx");
-  "routes/Projeckte/zweiteMonitor": typeof import("./app/routes/Projeckte/zweiteMonitor.tsx");
+  "routes/Projeckte/ZweiterMonitor": typeof import("./app/routes/Projeckte/ZweiterMonitor.tsx");
   "routes/Projeckte/AltesPortafolio": typeof import("./app/routes/Projeckte/AltesPortafolio.tsx");
   "routes/Projeckte/DasBlog": typeof import("./app/routes/Projeckte/DasBlog.tsx");
   "components/ProtectedRoute": typeof import("./app/components/ProtectedRoute.tsx");

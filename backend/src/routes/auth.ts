@@ -70,13 +70,12 @@ router.post("/logout", async (req: Request, res) => {
 router.get("/me", (req: Request, res) => {
   const sessionId = z.string().safeParse(req.cookies.session);
   console.log(sessionId);
-  
+
   if (sessionId.data) {
     return res.status(204).end();
   } else {
     return res.status(401).json({ message: "Not authenticated" });
   }
 });
-
 
 export default router;
