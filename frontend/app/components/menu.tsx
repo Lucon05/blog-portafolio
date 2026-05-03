@@ -1,18 +1,18 @@
 function Menu({
-  MenuContenido1,
+
   MenuContenido2,
  
   MenuContenido5,
   MCW5,
-  MCW1,
+
   MCW2,
 
 }: {
-  MenuContenido1: string;
+  
   MenuContenido2: string;
   MenuContenido5: string;
   MCW5: string;
-  MCW1: string;
+  
   MCW2: string;
   
 }) {
@@ -24,22 +24,19 @@ function Menu({
             <div className="">
               
 
-              
-                <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl " href={MCW1}>
-                  {MenuContenido1}
-                </a>
+            
               
 
-                <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl " href={MCW2}>
+               <b> <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-2xl lg:text-4xl  flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C]  lg:p-4 " href={MCW2}>
                   {MenuContenido2}
-                </a>
+                </a></b>
               
 
               
 
-                <a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-md l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-lg xl:text-3xl " href={MCW5}>
+                <b><a className="pt-1 pb-1  sm:text-xs,pt-3 md:text-2xl l2xl:4xl flex w-12/12 items-center justify-center rounded-lg  text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] lg:text-4xl lg:p-4 " href={MCW5}>
                   {MenuContenido5}
-                </a>
+                </a></b>
             
             </div>
           </nav>

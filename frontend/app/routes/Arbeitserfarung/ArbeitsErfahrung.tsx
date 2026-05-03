@@ -15,31 +15,29 @@ export default function ArbeitsErfahrung() {
           Home
         </Link>
       </div>
-      <div className="lg:my-20 lg:flex">
-        <div className="m-5 p-5 lg:mt-20 lg:max-w-4/8">
+      <div className="  items-center text-[#2D2D2D] lg:mt-10 lg:flex">
+        <div className="m-5 p-5 lg:max-w-4/8">
           <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
             <b>Auslandpracktikum</b>
           </h2>
           <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-            Ich fange gerade erst mit IT an, weil ich wissen will, wie das alles
-            im Hintergrund funktioniert. Ich lerne am besten, wenn ich Dinge
-            einfach direkt ausprobiere. Deshalb baue ich gerade mein eigenes
-            Blog und verwalte meinen Server bei Hetzner. Jetzt suche ich eine
-            Ausbildung zum Fachinformatiker, um das Ganze richtig zu lernen und
-            später in diesem Bereich zu arbeiten.
-            <Link to="/DasBlog">weiter lesen</Link>
+            Dieses Projekt ist ein Lernprojekt, in dem ich einen eigenen Blog
+            entwickle. Ziel ist es, praktische Erfahrungen in der
+            Full-Stack-Entwicklung zu sammeln und zu verstehen, wie Frontend,
+            Backend und Datenbank zusammenarbeiten.
+            <Link to="/AuslandsPraktikum"> Weiter lesen</Link>
           </p>
         </div>
         <div className="">
           <Cartica
-            className="lg:mt-40 lg:justify-items-center xl:mt-10"
+            className="lg:ml-50"
             carticaLink={""}
-            photo={"Img-Portafolio/BildEntwürfBlog.png"}
+            photo={"Img-Portafolio/Arbeitserfahrung/download1.png"}
           ></Cartica>
         </div>
       </div>
-      <div className="flex-row-reverse lg:my-20 lg:flex">
-        <div className="m-5 p-5 lg:mt-40 lg:max-w-4/8">
+      <div className="lg: flex-row-reverse items-center text-[#2D2D2D] lg:flex">
+        <div className="m-5 p-5 lg:max-w-4/8">
           <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
             <b>Pracktikum PhoneBros</b>
           </h2>
@@ -53,14 +51,14 @@ export default function ArbeitsErfahrung() {
         </div>
         <div className="">
           <Cartica
-            className="lg:mt-40 xl:mt-10"
+            className=" "
             carticaLink={""}
-            photo={"Img-Portafolio/Phonebros.jpeg"}
+            photo={"Img-Portafolio/Arbeitserfahrung/Phonebros.jpeg"}
           ></Cartica>
         </div>
       </div>{" "}
-      <div className="lg:my-20 lg:flex">
-        <div className="m-5 p-5 lg:mt-50 lg:max-w-4/8">
+      <div className="items-center text-[#2D2D2D] lg:flex">
+        <div className="m-5 p-5 lg:max-w-4/8">
           <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
             <b>Minijob Park-Gastro GbR, Leipzig </b>
           </h2>
@@ -72,14 +70,14 @@ export default function ArbeitsErfahrung() {
         </div>
         <div className="">
           <Cartica
-            className="lg:mt-40 xl:mt-10"
+            className=""
             carticaLink={""}
-            photo={"Img-Portafolio/glashaus-leipzig-01.jpg"}
+            photo={"Img-Portafolio/Arbeitserfahrung/glashaus-leipzig-01.jpg"}
           ></Cartica>
         </div>
       </div>
-      <div className="flex-row-reverse lg:my-20 lg:flex">
-        <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
+      <div className="flex-row-reverse text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
+        <div className="m-5 p-5 lg:max-w-4/8">
           <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
             <b>Autohaus Hagen GmbH, Leipzig </b>
           </h2>
@@ -93,9 +91,11 @@ export default function ArbeitsErfahrung() {
         </div>
         <div className="">
           <Cartica
-            className="lg:mt-40 xl:mt-10"
+            className=""
             carticaLink={""}
-            photo={"Img-Portafolio/autohaus-walter-hagen_OL.jpg"}
+            photo={
+              "Img-Portafolio/Arbeitserfahrung/autohaus-walter-hagen_OL.jpg"
+            }
           ></Cartica>
         </div>
       </div>{" "}

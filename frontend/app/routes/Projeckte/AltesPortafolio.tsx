@@ -12,15 +12,17 @@ export default function AltesPortafolio() {
           to="/Projekte"
           className="mt-5 flex items-center justify-center rounded-lg bg-[#822a34d3] px-10 py-4 text-sm text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-lg xl:text-2xl"
         >
-          weiter lesen
+          Zurück
         </Link>
       </div>
       <div>
-        <div className="flex-row-reverse lg:my-20 lg:flex lg:items-center">
-          <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
+        <div className="flex-row-reverse lg:mt-20  lg:flex lg:items-center">
+          <div className=" m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
               <b>Projektbeschreibung: </b>
-              <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+
+            </h2>
+                          <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
                 Dieses Projekt war mein erstes Portfolio, das ich während meiner
                 Zeit bei der Azubi Digital Akademie erstellt habe. Damals habe
                 ich gerade erst angefangen, HTML und CSS zu lernen. Ich habe die
@@ -28,44 +30,42 @@ export default function AltesPortafolio() {
                 bekommen, wie Webseiten strukturiert und gestaltet werden.e, um
                 das Display testen zu können.
               </p>
-            </h2>
-            <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
+              <p className=" mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
               <b>Status::</b> Abgeschlossen
             </p>
           </div>
           <div className="">
             <Cartica
-              className="lg:mt-40 xl:mt-10"
+              className=""
               carticaLink={""}
               photo={"Img-Portafolio/Projekte/ImgOldCode.png"}
             ></Cartica>
           </div>
-        </div>{" "}
-<div className=" lg:my-20 lg:flex lg:items-center">
-          <div className="lgmt-40 m-5 p-5 lg:max-w-4/8">
+        </div>
+        <div className="lg:mb-20 lg:flex lg:items-center">
+          <div className="lg m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
-              <b>Projektbeschreibung: </b>
-              <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-                Dieses Projekt war mein erstes Portfolio, das ich während meiner
-                Zeit bei der Azubi Digital Akademie erstellt habe. Damals habe
-                ich gerade erst angefangen, HTML und CSS zu lernen. Ich habe die
-                Seite komplett selbst aufgebaut, um ein Gefühl dafür zu
-                bekommen, wie Webseiten strukturiert und gestaltet werden.e, um
-                das Display testen zu können.
-              </p>
-            </h2>
-            <p className="*: mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">
-              <b>Status::</b> Abgeschlossen
-            </p>
+              <b>Was ich dabei gelernt habe: </b>
+              </h2>
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">Grundlagen von HTML und CSS</p>
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">Erste Layouts und Styling</p>
+            <h2 className="mt-10 text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
+              <b>Rückblick</b>
+              </h2>
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-2xl xl:text-4xl">Rückblickend enthält das Projekt noch viele Fehler und ist nicht responsiv. Trotzdem ist es für mich ein wichtiger Meilenstein, weil ich hier meine ersten praktischen Erfahrungen gesammelt habe.</p>
+      
+            
+
+            
           </div>
           <div className="">
             <Cartica
-              className="lg:mt-40 xl:mt-10"
+              className=""
               carticaLink={""}
-              photo={"Img-Portafolio/Projekte/ImgOldCode.png"}
+              photo={"Img-Portafolio/Projekte/ImgOldPortafolio.png"}
             ></Cartica>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );

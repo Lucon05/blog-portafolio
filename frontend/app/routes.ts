@@ -6,7 +6,6 @@ export default [
     index("routes/home.tsx"),
     route("login", "routes/login.tsx"),
 
-    route("AboutMe", "routes/AboutMe.tsx"),
     
     route("ArbeitsErfahrung", "routes/Arbeitserfarung/ArbeitsErfahrung.tsx"),
     route("AuslandsPraktikum", "routes/Arbeitserfarung/AuslandsPraktikum.tsx"),

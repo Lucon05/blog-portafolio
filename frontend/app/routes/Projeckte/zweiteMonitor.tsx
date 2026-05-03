@@ -8,14 +8,14 @@ export default function AuslandsPraktikum() {
       <div className="items-center justify-between bg-[#722F37] p-10 text-3xl font-bold text-[#f5f5dc] sm:text-5xl md:flex md:text-6xl lg:text-7xl">
         <h1 className="text-center md:text-start"> Second Life Display</h1>
         <Link
-          to="/AltesPortafolio"
+          to="/Projekte"
           className="mt-5 flex items-center justify-center rounded-lg bg-[#822a34d3] px-10 py-4 text-sm text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-lg xl:text-2xl"
         >
           Zurück
         </Link>
       </div>
       <div>
-        <div className=" lg:flex lg:items-center">
+        <div className=" lg:flex lg:mt-14 lg:items-center">
           <div className="m-5  p-5 lg:max-w-4/8 ">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Projektbeschreibung</b>
@@ -106,5 +106,5 @@ export default function AuslandsPraktikum() {
         </div>
       </div>
     </div>
-  );
+  )
 }
