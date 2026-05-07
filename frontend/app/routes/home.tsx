@@ -26,20 +26,27 @@ export default function Home() {
                 <b>Hallo! Ich bin Luis aus Venezuela.</b>
               </h2>
               <p className="mt-10 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-                Meine Leidenschaft für die IT entstand aus der Neugier, wie
-                Systeme im Hintergrund funktionieren. Erste Berufserfahrungen
-                sammelte ich bei einem Praktikum auf Mallorca, wo ich in den
-                letzten vier Wochen auch mit der Entwicklung meines eigenen
-                Blogs begann.
+                Meine Leidenschaft für die IT entstand aus der Neugier zu
+                verstehen, wie komplexe Systeme im Hintergrund funktionieren.
+                Ich lebe seit sechs Jahren in Deutschland und verfüge über sehr
+                gute Deutschkenntnisse. Da Spanisch meine Muttersprache ist,
+                kann ich mich zudem sicher in einem internationalen Umfeld
+                bewegen; grundlegende Englischkenntnisse bringe ich ebenfalls
+                mit.
               </p>
+              <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">  Praxiserfahrungen sammelte ich während eines zweimonatigen Praktikums auf Mallorca. Dort begann ich in den letzten vier Wochen mit der Entwicklung meines eigenen Blogs</p>
               <p className="mt-5 text-center sm:text-2xl md:text-left md:text-3xl lg:text-4xl">
-                Dieses Projekt führe ich seitdem kontinuierlich fort. Ich lerne
-                am liebsten durch direktes Ausprobieren: Ich verwalte meinen
-                eigenen Server bei Hetzner, kümmere mich um Updates und
-                veröffentliche dort meine Web-Projekte. Jetzt suche ich eine
-                Ausbildung zum Fachinformatiker, um meine praktischen
-                Erfahrungen mit professioneller Theorie zu vertiefen und in der
-                IT-Branche voll durchzustarten.
+
+                Dieses Projekt führe ich seitdem kontinuierlich weiter. Ich
+                lerne am liebsten durch direktes Ausprobieren: Ich verwalte
+                meinen eigenen Server bei Hetzner, kümmere mich um Updates und
+                veröffentliche dort meine Web-Projekte, wie dieses Portfolio
+                oder meinen Blog. Dabei arbeite ich mit Technologien wie React,
+                TypeScript, SQL, Node.js, Express und Tailwind CSS und probiere
+                regelmäßig neue Dinge aus. Jetzt suche ich eine Ausbildung zum
+                Fachinformatiker für Anwendungsentwicklung, um meine praktischen
+                Erfahrungen mit professionellem Fachwissen zu verbinden und mich
+                in der IT-Branche weiterzuentwickeln.
               </p>
             </div>
             <div className="">
