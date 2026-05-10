@@ -2,6 +2,7 @@ function Footer({ className }: { className?: string }) {
   return (
     // Ahora la prop className realmente funciona
     <div className={className}>
+      <meta name="robots" content="noindex" />
       <div>
         <p className="mt-5 text-2xl">
           <b>Kontact</b>
@@ -74,7 +75,15 @@ function Footer({ className }: { className?: string }) {
           </svg>
         </a>
       </div>
+      <div className="mt-10 border-t border-[#f5f5dc]/20 pt-4 text-center text-[20px] text-[#f5f5dc] opacity-50">
+  <p className="font-bold">Impressum</p>
+  <p>Luis Alfonso Contreras Márquez</p>
+  <p>Ringstraße 9, 04209 Leipzig</p>
+  <p>E-Mail: contrerasluis1105@gmail.com | Tel: +49 163 8520989</p>
+  <p className="mt-2 italic">Gemäß § 5 TMG. Diese Website verwendet technisch notwendige Cookies (Session-Management). Kein Tracking, keine Analyse-Tools.</p>
+</div>
     </div>
+    
   );
 }
 
