@@ -16,7 +16,7 @@ export default function Blog() {
         </Link>
       </div>
       <div>
-        <div className="lg:mt-14 lg:flex lg:items-center">
+        <div className="  text-[#2D2D2D] lg:mt-14 lg:flex lg:items-center">
           <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Projektbeschreibung</b>
@@ -59,7 +59,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <div className="flex-row-reverse lg:flex lg:items-center">
+        <div className="  text-[#2D2D2D] flex-row-reverse lg:flex lg:items-center">
           <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Aktueller Stand</b>
@@ -91,7 +91,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <div className="lg:mb-20 lg:flex lg:items-center">
+        <div className=" text-[#2D2D2D] lg:mb-20 lg:flex lg:items-center">
           <div className="m-5 p-5 lg:max-w-4/8">
             <h2 className="text-center text-2xl sm:text-4xl md:text-left md:text-5xl lg:text-4xl xl:text-6xl">
               <b>Verwendete Tools & Technologien</b>
