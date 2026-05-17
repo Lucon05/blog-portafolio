@@ -12,7 +12,7 @@ export default function Projekte() {
           to="/"
           className="flex items-center justify-center rounded-lg bg-[#822a34d3] px-10 py-4 text-sm text-[#F5F5DC] shadow-md transition-colors hover:bg-[#A0364C] md:text-lg xl:text-2xl"
         >
-          Home
+          Zurück
         </Link>
       </div>
       <div className="items-center text-[#2D2D2D] lg:mt-20 lg:flex">
