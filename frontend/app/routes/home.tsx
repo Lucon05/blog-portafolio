@@ -39,7 +39,7 @@ export default function Home() {
 
                 Dieses Projekt führe ich seitdem kontinuierlich weiter. Ich
                 lerne am liebsten durch direktes Ausprobieren: Ich verwalte
-                meinen eigenen Server bei Hetzner, kümmere mich um Updates und
+                meinen eigenen VPS bei Hetzner, kümmere mich um Updates und
                 veröffentliche dort meine Web-Projekte, wie dieses Portfolio
                 oder meinen Blog. Dabei arbeite ich mit Technologien wie React,
                 TypeScript, SQL, Node.js, Express und Tailwind CSS und probiere
