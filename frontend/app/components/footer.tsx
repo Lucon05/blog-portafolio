@@ -5,7 +5,7 @@ function Footer({ className }: { className?: string }) {
       <meta name="robots" content="noindex" />
       <div>
         <p className="mt-5 text-2xl">
-          <b>Kontact</b>
+          <b>Kontakt</b>
         </p>
       </div>
       <div className="m-5 flex flex-row space-x-10">
