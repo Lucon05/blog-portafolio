@@ -6,7 +6,7 @@ export default function Projekte() {
   return (
     <div>
       <div className="flex items-center justify-between bg-[#722F37] p-10 text-3xl font-bold text-[#f5f5dc] sm:text-5xl md:text-6xl lg:text-7xl">
-        <h1>Zurück</h1>
+        <h1>Projekte</h1>
 
         <Link
           to="/"
